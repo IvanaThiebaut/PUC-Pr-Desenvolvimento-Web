@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'montserrat';
+    src: url(../fonts/Montserrat.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'alta';
+    src: url(../fonts/alta-regular.ttf) format(truetype);
+}
+
+:root {
+    --verdeescuro: #25321B;
+    --verdeclaro: #9cb699;
+    --terracota: #622001;
+    --terracotaclaro:#b6774d;
+    --branco01: #F6F5F4;
+
+    --fontTexto: 'montserrat';
+    --fontTitulo: 'alta';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    font-family: var(--fontTexto);
+    min-height: 150vh;
+    background-color: var(--verdeclaro);
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem {
+    background-color: var(--verdeclaro);
+    padding: 20px 4%;
+}
+
+header.rolagem a{
+    color: var(--verdeescuro);
+}
+
+header.rolagem button{
+    color: var(--branco01);
+    background-color: var(--verdeescuro);
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    font-family: var(--fontTexto);
+    color: var(--branco01);
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    background-color: var(--branco01);
+    color: var(--verdeescuro);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.banner{
+    height: 90vh;
+    background-image:url(../img/banner03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-family: var(--fontTitulo);
+    letter-spacing: 7px;
+    font-weight: lighter;
+    color: var(--branco01);
+    font-size: 6em;
+}
+
+.banner h1 span{
+    font-family: var(--fontTitulo);
+    color: var(--terracotaclaro);
+}
+
+#divSection{
+    justify-content: center;
+}
+
+h2.tituloSection {
+    font-family: var(--fontTitulo);
+    font-weight: lighter;
+    color: var(--verdeescuro);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.5em;
+    max-width: 1200px;
+    padding: 30px;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+h3.tituloSection {
+    font-family: var(--fontTitulo);
+    font-weight: lighter;
+    color: var(--verdeescuro);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    max-width: 1200px;
+    padding-left: 100px;
+    line-height: 1.2em;
+}
+
+h3.textoSection{
+    font-family: var(--fontTexto);
+}
+
+img.fotosBox {
+    max-width: 300px;
+    max-height: 300px;
+    border: solid 2px var(--verdeescuro);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+img#fotoTerapia {
+    max-width: 400px;
+    border: solid 2px var(--verdeescuro);
+}
+
+#divSection2{
+    justify-content:space-around;
+}
+
+.textoSection {
+    font-family: var(--fontTexto);
+    align-items: center;
+    max-width: 700px;
+    font-size: 1.5em;
+    line-height: 2em;
+    margin: 20px 100px;
+}
+
+.textoSectionAbout {
+    font-family: var(--fontTexto);
+    align-items: center;
+    max-width: 1200px;
+    font-size: 1.5em;
+    line-height: 2em;
+    margin: 20px 100px;
+}
+
+.ulItens {
+    font-family: var(--fontTexto);
+    font-size: 0.8em;
+}
+
+section.fundoTerracota {
+    background-color: var(--terracotaclaro);
+    box-shadow: inset 6px 6px 13px 0px #00000096;
+    color: var(--verdeescuro);
+    padding-bottom: 30px;
+}
+
+section.fundoVerde {
+    background-color: var(--verdeclaro);
+    box-shadow: inset 6px 6px 13px 0px #00000096;
+    color: var(--verdeescuro);
+    padding-bottom: 30px;
+}
+
+section.fundoClaro {
+    background-color: var(--branco01);
+    color: var(--verdeescuro);
+    box-shadow: inset 6px 6px 13px 0px #00000096;
+    padding-bottom: 30px;
+}
+
+footer {
+    background-color: var(--terracota);
+}
+
+#Logo-footer {
+    max-width: 180px;
+    margin: 10px;
+}
+
+/* estilos do forms */
+
+.contact-form {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    }
+
+p#alinharCentro {
+    display: flex;
+    justify-content: center;
+    font-family: var(--fontTexto);
+    padding-bottom: 40px;
+}
+    
+.form-submit {
+    display: inline-block;
+    background: var(--verdeescuro);
+    color: var(--branco01);
+    border-bottom: none;
+    width: auto;
+    padding: 15px 39px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-left: 15px;
+    cursor: pointer
+}
+
+.btn-envio{
+    padding-bottom: 50px;
+}
+
+.form-submit:hover {
+    background: var(--terracotaclaro);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+    display: inline-flex;
+    margin-left: 25px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0
+}
+    
+label {
+    color: var(--verdeescuro);
+}
+
+input {
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    color: var(--verdeescuro);
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 6px 30px;
+    box-sizing: border-box
+}
+
+::placeholder {
+    color: var(--verdeclaro);
+    font-size: medium;
+}
+
+.label-agree-term {
+    position: relative;
+    top: 0%;
+}
+
+.agree-term {
+    display: inline-block;
+    width: auto
+}
+
+.term-service {
+    font-size: 1em;
+    color: var(--terracota)
+}
+
+input[type=checkbox]+label {
+    display: inline-block;
+    line-height: 1.5em;
+    margin-top: 6px;
+}
+   
+/* tabela forms */
+
+table.tableCSS {
+    background-color: var(--branco01);
+    text-align: left;
+    padding: 10px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: medium;
+    font-family: var(--fontTexto);
+}
+
+table.tableCSS td {
+    border: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #929292;
+}
+
+table.tableCSS th {
+    background-color:var(--verdeclaro);
+    border-radius: 10px;
+    height: 30px;
+    color: var(--verdeescuro);
+    text-align: center;
+}
